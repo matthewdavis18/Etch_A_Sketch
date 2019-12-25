@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+
+        <style>
+            canvas{ 
+                border:3px;
+                background:#333;
+                margin:50px 50px 50px 50px;
+            }
+                canvas.shake {
+                    animation: shake 0.2s linear 5; 
+                }
+            
+                @keyframes shake { 
+                10%,
+                90% {
+                    transform : translate3d(-1px, 0, 0);
+                }
+
+                20%,
+                80% {
+                    transform: translate3d(2px, 0 , 0 ); 
+                }
+
+                30%,
+                70%{
+                    transform: translate3d(-3px, 0, 0 );
+                }
+                
+                }
+            </style> 
+<canvas width="800px" height='500px' id='Etch-a-Sketch'> </canvas> 
+<button class='shake'> shake </button>
+
+<script src='draw.js'></script> 
+
+ 
+
+</body>
+</html>
